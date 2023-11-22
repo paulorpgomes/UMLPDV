@@ -74,4 +74,10 @@ classDiagram
     +JPrincipal()
     +filtrar(): void
   }
+
+  Produto -- VendaProduto: "1" *-- "1"
+  Produto -- JCadastro: "1" *-- "1"
+  ModeloTabela -- Produto: "1" *-- "N"
+  JPrincipal -- ModeloTabela: "1" *-- "1"
+  JPrincipal -- JCadastro: "1" *-- "1"
 ```
